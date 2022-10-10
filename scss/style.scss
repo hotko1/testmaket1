@@ -13,11 +13,19 @@
 }
 
 .slider__item {
-    background: url(../images/iphoe1.png) center 98px no-repeat;
     min-height: 787px;
     width: auto;
     margin-left: 15px;
     text-align: center;
+    &-1 {
+        background: url(../images/iphone01.png) center 98px no-repeat;
+    }
+    &-2 {
+        background: url(../images/iphone02.png) center 98px no-repeat;
+    }
+    &-3 {
+        background: url(../images/iphone03.png) center 98px no-repeat;
+    }
 }
 
 .slick-dots {
