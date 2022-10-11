@@ -1,0 +1,48 @@
+@import "reset";
+@import "variables";
+
+.why-ama {
+    padding-top: 109px;
+    padding-bottom: 117px;
+    &__title {
+        margin-bottom: 64px;
+        font-family: $font-family-title;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 600;
+        color: $dark-grey;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+    justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:first-child) {
+            margin-left: 168px;
+        }
+    }
+    &__image-item {
+        order: -1;
+        margin-bottom: 41px;
+    }
+    &__title-item {
+        font-family: $font-family-title;
+        font-size: 1.125rem;
+        line-height: 1.33;
+        font-weight: 500;
+        color: $medium-grey;
+    }
+    &__text-item {
+        max-width: 250px;
+        text-align: center;
+        font-family: $font-family-base;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 500;
+        color: $medium-grey;
+    }
+}
