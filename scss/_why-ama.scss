@@ -2,32 +2,66 @@
 @import "variables";
 
 .why-ama {
-    padding-top: 109px;
-    padding-bottom: 117px;
+    padding-top: 100px;
+    padding-bottom: 52px;
     &__title {
-        margin-bottom: 64px;
+        margin-bottom: 61px;
+        margin-left: 4px;
         font-family: $font-family-title;
         font-size: 3rem;
         line-height: 1.2;
+        letter-spacing: 1px;
         font-weight: 600;
         color: $dark-grey;
         text-align: center;
-    }
-    &__content {
-        display: flex;
-    justify-content: center;
+        transform: scale(0.93, 1);
+
+        @media (max-width:1024px) {
+            font-size: 2rem;
+        }
     }
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        &:not(:first-child) {
-            margin-left: 168px;
+        margin-bottom: 60px;
+        &:nth-child(1) {
+            .why-ama__image-item {
+                transform: translateY(-2px);
+            }
+            .why-ama__title-item {
+                transform: translateX(-6px) scaleX(1.01);
+            }
+            .why-ama__text-item {
+                transform: translateX(-6px) scaleX(1.005);;
+            }
+        }
+        &:nth-child(2) {
+            .why-ama__image-item {
+                transform: translate(1px, -1px);
+            }
+            .why-ama__title-item {
+                transform: translateX(1px) scale(0.995, 0.975);
+            }
+            .why-ama__text-item {
+                transform: scaleY(1.01);;
+            }
+        }
+        &:nth-child(3) {
+            .why-ama__image-item {
+                transform: translate(-1px, -1px);
+            }
+            .why-ama__title-item {
+                transform: scale(0.995, 0.975);
+            }
+            .why-ama__text-item {
+                transform: translate(0px, 1px) scaleY(1.01);;
+            }
         }
     }
     &__image-item {
         order: -1;
-        margin-bottom: 41px;
+        margin-bottom: 36px;
     }
     &__title-item {
         font-family: $font-family-title;

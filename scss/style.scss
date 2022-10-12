@@ -1,2 +1,27 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
 @import "banner";
 @import "why-ama";
+
+.container {
+    max-width: 1170px;
+
+    @media (max-width:1200px) {
+        max-width: 962px;
+    }
+    @media (max-width:992px) {
+        max-width: 690px;
+    }
+    @media (max-width:720px) {
+        max-width: 510px;
+    }
+    @media (max-width:540px) {
+        max-width: 288px;
+    }
+    @media (max-width:10px) {
+        max-width: 1140px;
+    }
+    
+}
