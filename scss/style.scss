@@ -4,24 +4,22 @@
 @import "node_modules/bootstrap/scss/grid";
 @import "banner";
 @import "why-ama";
+@import "share-instancly";
 
 .container {
     max-width: 1170px;
+    margin: 0 auto;
 
-    @media (max-width:1200px) {
+    @media (max-width:1230px) {
         max-width: 962px;
     }
-    @media (max-width:992px) {
+    @media (max-width:1024px) {
         max-width: 690px;
     }
-    @media (max-width:720px) {
+    @media (max-width:750px) {
         max-width: 510px;
     }
-    @media (max-width:540px) {
+    @media (max-width:570px) {
         max-width: 288px;
     }
-    @media (max-width:10px) {
-        max-width: 1140px;
-    }
-    
 }

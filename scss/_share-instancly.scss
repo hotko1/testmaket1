@@ -1,0 +1,196 @@
+@import "reset";
+@import "variables";
+
+.share-instancly {
+    max-height: 734px;
+    background-color: $very-dark-gray;
+    overflow: hidden;
+
+    @media (max-width: 1230px) {
+        max-height: 630px;
+    }
+    @media (max-width: 1024px) {
+        max-height: 530px;
+    }
+    @media (max-width: 750px) {
+        max-height: 500px;
+    }
+    @media (max-width: 570px) {
+        max-height: 1200px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+
+        @media (max-width: 570px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__left {
+        @media (max-width: 570px) {
+            max-height: 460px;
+        }
+    }
+    &__left-image {
+        transform: translate(-112px, 72px);
+
+        @media (max-width: 1230px) {
+            transform: translate(-140px, -70px) scale(0.8, 0.8);
+        }
+        @media (max-width: 1024px) {
+            transform: translate(-200px, -230px) scale(0.6, 0.6);
+        }
+        @media (max-width: 750px) {
+            transform: translate(-250px, -390px) scale(0.4, 0.4);
+        }
+        @media (max-width: 570px) {
+            transform: translate(-217px, -430px) scale(0.3, 0.3);
+        }
+    }
+    &__right {
+        padding-left: 0;
+        transform: translateX(-15px);
+
+        @media (max-width: 570px) {
+            padding-left: 15px;
+            transform: translateX(0);
+        }
+    }
+}
+
+.slider-share-instancly {
+    padding-top: 183px;
+
+    @media (max-width: 1230px) {
+        padding-top: 143px;
+    }
+    @media (max-width: 1024px) {
+        padding-top: 90px;
+    }
+    @media (max-width: 750px) {
+        padding-top: 50px;
+    }
+    @media (max-width: 570px) {
+        padding-bottom: 70px;
+    }
+
+    &__item {
+        &.slick-slide {
+            transform: translateX(10px);
+        }
+        &.slick-current {
+            transform: translateX(0);
+        }
+    }
+    &__title {
+        margin-bottom: 19px;
+        transform: translateX(-11px) scaleX(0.97);
+        font-family: $font-family-title;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 600;
+        color: $white;
+
+        @media (max-width: 1230px) {
+            transform: translateX(-5px) scaleX(0.986);
+        }
+        @media (max-width: 1024px) {
+            transform: translateX(-3px) scaleX(0.986);
+            font-size: 2rem;
+        }
+    }
+    &__top-text {
+        max-width: 445px;
+        margin-bottom: 52px;
+        transform: translateX(-1px) scaleX(1.003);
+        font-family: $font-family-base;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $silver-chalice;
+
+        @media (max-width: 1230px) {
+            transform: translateX(0) scaleX(1);
+        }
+        @media (max-width: 1024px) {
+            max-width: 330px;
+            margin-bottom: 32px;
+        }
+        @media (max-width: 750px) {
+            max-width: 245px;
+            margin-bottom: 22px;
+            font-size: 1rem;
+        }
+        @media (max-width: 570px) {
+            max-width: 260px;
+            margin-bottom: 27px;
+            font-size: 1rem;
+        }
+    }
+    &__bottom-wrapper {
+        display: flex;
+
+        @media (max-width: 750px) {
+            display: block;
+        }
+    }
+    &__link-button {
+        margin-right: 30px;
+
+        @media (max-width: 1024px) {
+            max-width: 100px;
+            margin-right: 15px;
+        }
+    }
+    &__link-image {
+        transition: all 0.5s;
+        &:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 1024px) {
+            transform: translate(-41px, -22px) scale(0.5, 0.5);
+        }
+        @media (max-width: 750px) {
+            transform: translate(20px, -15px) scale(0.7, 0.7);
+        }
+        @media (max-width: 570px) {
+            transform: translate(46px, -15px) scale(0.7, 0.7);
+        }
+    }
+    &__bottom-text {
+        max-width: 245px;
+        transform: translateY(-5px);
+        font-family: $font-family-base;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $silver-chalice;
+
+        @media (max-width: 1024px) {
+            max-width: 220px;
+        }
+        @media (max-width: 750px) {
+            font-size: 0.875rem;
+        }
+        @media (max-width: 570px) {
+            max-width: 260px;
+        }
+    }
+    .slick-dots {
+        transform: translate(-269px, 108px);
+
+        @media (max-width: 1230px) {
+            transform: translate(-214px, 108px);
+        }
+        @media (max-width: 1024px) {
+            transform: translate(-140px, 67px);
+        }
+        @media (max-width: 750px) {
+            transform: translate(-102px, 60px);
+        }
+        @media (max-width: 570px) {
+            transform: translate(-17px, 60px);
+        }
+    }
+}
