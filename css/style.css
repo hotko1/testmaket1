@@ -1964,6 +1964,147 @@ a {
   }
 }
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+.slick-dots button {
+  border-color: #fff;
+  border-style: none;
+  padding: 0;
+}
+
+.taken-with-ama {
+  max-height: 822px;
+  overflow: hidden;
+}
+.taken-with-ama__top {
+  margin-bottom: 77px;
+  padding-top: 69px;
+}
+.taken-with-ama__title {
+  margin-bottom: 20px;
+  transform: translateX(-9px) scaleX(0.98);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #f06464;
+}
+.taken-with-ama__description {
+  max-width: 450px;
+  transform: translateX(0px) scaleX(1.007);
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #666666;
+}
+.taken-with-ama__gallery {
+  display: flex;
+  background-color: #151515;
+}
+.taken-with-ama__image-wrapper {
+  height: 614px;
+  background-color: #151515;
+  transition: all 0.5s;
+}
+.taken-with-ama__image-wrapper:hover {
+  height: 557px;
+  transform: translateY(-38px);
+}
+.taken-with-ama__image {
+  height: 84.38%;
+  transition: all 0.5s;
+  object-fit: cover;
+}
+.taken-with-ama__image.image-item-1 {
+  width: 464px;
+}
+.taken-with-ama__image.image-item-2 {
+  width: 519px;
+}
+.taken-with-ama__image.image-item-3 {
+  width: 519px;
+}
+.taken-with-ama__image.image-item-4 {
+  width: 501px;
+}
+.taken-with-ama__image-bottom {
+  height: 87px;
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 35px 0 35px;
+  background-color: #151515;
+}
+.taken-with-ama__image-description {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #c2c2c2;
+}
+.taken-with-ama__like-counter {
+  position: relative;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-weight: 400;
+  color: #f06464;
+}
+.taken-with-ama__like-counter::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icon-heart.png);
+  width: 25px;
+  height: 21px;
+  left: -40px;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;

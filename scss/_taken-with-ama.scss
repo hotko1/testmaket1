@@ -1,0 +1,90 @@
+@import "reset";
+@import "variables";
+
+.taken-with-ama {
+    max-height: 822px;
+    overflow: hidden;
+    &__top {
+        margin-bottom: 77px;
+        padding-top: 69px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        transform: translateX(-9px) scaleX(0.98);
+        font-family: $font-family-title;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 500;
+        color: $bean-red;
+    }
+    &__description {
+        max-width: 450px;
+        transform: translateX(0px) scaleX(1.007);
+        font-family: $font-family-base;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $ironside-grey;
+    }
+    &__gallery {
+        display: flex;
+        background-color: $cinder;
+    }
+    &__image-wrapper {
+        height: 614px;
+        background-color: $cinder;
+        transition: all .5s;
+        &:hover {
+            height: 557px;
+            transform: translateY(-38px);
+        }
+    }
+    &__image {
+        height: 84.38%;
+        transition: all .5s;
+        object-fit: cover;
+        &.image-item-1 {
+            width: 464px;
+        }
+        &.image-item-2 {
+            width: 519px;
+        }
+        &.image-item-3 {
+            width: 519px;
+        }
+        &.image-item-4 {
+            width: 501px;
+        }
+    }
+    &__image-bottom {
+        height: 87px;
+        display: flex;
+        justify-content: space-between;
+        padding: 31px 35px 0 35px;
+        background-color: $cinder;
+    }
+    &__image-description {
+        font-family: $font-family-base;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $silversand;
+    }
+    &__like-counter {
+        position: relative;
+        font-family: $font-family-base;
+        font-size: 1.5rem;
+        line-height: 1.125;
+        font-weight: 400;
+        color: $bean-red;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/icon-heart.png);
+            width: 25px;
+            height: 21px;
+            left: -40px;
+            cursor: pointer;
+        }
+    }
+}
