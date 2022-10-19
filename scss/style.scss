@@ -5,6 +5,7 @@
 @import "banner";
 @import "why-ama";
 @import "share-instancly";
+@import "new-features";
 
 .container {
     max-width: 1170px;
@@ -19,7 +20,7 @@
     @media (max-width:750px) {
         max-width: 510px;
     }
-    @media (max-width:570px) {
+    @media (max-width:575px) {
         max-width: 288px;
     }
 }

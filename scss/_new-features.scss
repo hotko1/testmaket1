@@ -1,0 +1,191 @@
+@import "reset";
+@import "variables";
+
+.new-features {
+    max-height: 803px;
+    background-color: $dune;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        max-height: 605px;
+    }
+    @media (max-width: 750px) {
+        max-height: 640px;
+    }
+    @media (max-width: 575px) {
+        max-height: 1095px;
+    }
+    .row {
+        flex-wrap: nowrap;
+
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__left {
+        padding-top: 166px;
+        padding-left: 0;
+
+        @media (max-width: 1024px) {
+            padding-top: 90px;
+        }
+        @media (max-width: 750px) {
+            padding-top: 50px;
+        }
+        @media (max-width: 575px) {
+            padding-top: 70px;
+        }
+    }
+    &__title {
+        transform: translateX(-2px) scaleX(0.9863);
+        margin-bottom: 23px;
+        font-family: $font-family-title;
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 600;
+        color: $white;
+
+        @media (max-width: 1024px) {
+            font-size: 2rem;
+        }
+    }
+    &__description {
+        max-width: 440px;
+        transform: translateX(5px) scaleX(1.003);
+        margin-bottom: 65px;
+        font-family: $font-family-base;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $silver-chalice;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 35px;
+        }
+        @media (max-width: 750px) {
+            font-size: 1rem;
+        }
+    }
+    &__slider-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 470px;
+        min-height: 232px;
+        transform: translateX(4px);
+        background-color: $white;
+        border-radius: 5px;
+
+        @media (max-width: 1024px) {
+            width: 420px;
+        }
+        @media (max-width: 750px) {
+            width: 280px;
+        }
+    }
+    &__slider-bottom-background {
+        height: 42px;
+        background-color: $bean-red;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    &__right-image {
+        transform: translate(43px, 100px);
+        filter: drop-shadow(5px 2px 23px rgba(0, 0, 0, 0.7));
+
+        @media (max-width: 1230px) {
+            transform: translate(43px, 100px) scale(0.9);
+        }
+        @media (max-width: 1024px) {
+            transform: translate(-23px, 0) scale(0.6);
+        }
+        @media (max-width: 750px) {
+            transform: translate(-95px, -120px) scale(0.5);
+        }
+        @media (max-width: 575px) {
+            transform: translate(-100px, -170px) scale(0.5);
+        }
+    }
+}
+
+.slider-new-features {
+    &__item {
+        display: flex;
+        padding-top: 34px;
+        padding-left: 31px;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+    &__image {
+        margin-top: -18px;
+        object-fit: contain;
+        
+
+        @media (max-width: 750px) {
+            width: 89px;
+            height: 89px;
+            object-fit: none;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+    }
+    &__text {
+        max-width: 270px;
+        margin-left: 30px;
+
+        @media (max-width: 750px) {
+            margin-left: 0;
+        }
+    }
+    &__title {
+        margin-bottom: 7px;
+        transform: translateX(-2px);
+        font-family: $font-family-title;
+        font-size: 1.125rem;
+        line-height: 1.333;
+        font-weight: 500;
+        color: $indian-red;
+
+        @media (max-width: 750px) {
+            font-size: 1rem;
+        }
+    }
+    &__description {
+        transform: translateX(1px) scaleX(1.01);
+        font-family: $font-family-base;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $ironside-grey;
+
+        @media (max-width: 750px) {
+            font-size: 0.875rem;
+        }
+    }
+    .slick-dots {
+        transform: translate(-134px, 110px);
+
+        @media (max-width: 1024px) {
+            transform: translate(-105px, 110px);
+        }
+        @media (max-width: 750px) {
+            transform: translate(-50px, 83px);
+        }
+
+        li {
+            &:nth-child(3) {
+                margin-left: 7px;
+            }
+            &:last-child {
+                margin-left: 9px;
+            }
+
+            @media (max-width:1599px) {
+                transform: translateY(-74px);
+            }
+        }
+    }
+}
