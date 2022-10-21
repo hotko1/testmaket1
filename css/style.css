@@ -2017,6 +2017,11 @@ a {
   padding: 0;
 }
 
+.container-taken-with-ama {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 .taken-with-ama {
   max-height: 822px;
   overflow: hidden;
@@ -2087,6 +2092,23 @@ a {
   font-weight: 400;
   color: #c2c2c2;
 }
+.taken-with-ama__image-heart {
+  width: 25px;
+  height: 21px;
+  transform: translate(55px, 3px);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.5s;
+}
+.taken-with-ama__image-heart:hover {
+  opacity: 0.6;
+}
+.taken-with-ama__empty-heart {
+  background-image: url(../images/icon-heart-empty.png);
+}
+.taken-with-ama__full-heart {
+  background-image: url(../images/icon-heart-full.png);
+}
 .taken-with-ama__like-counter {
   position: relative;
   font-family: "Varela Round", sans-serif;
@@ -2094,15 +2116,6 @@ a {
   line-height: 1.125;
   font-weight: 400;
   color: #f06464;
-}
-.taken-with-ama__like-counter::before {
-  position: absolute;
-  content: "";
-  background-image: url(../images/icon-heart.png);
-  width: 25px;
-  height: 21px;
-  left: -40px;
-  cursor: pointer;
 }
 
 .container {

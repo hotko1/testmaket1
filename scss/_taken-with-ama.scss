@@ -1,6 +1,11 @@
 @import "reset";
 @import "variables";
 
+.container-taken-with-ama {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
 .taken-with-ama {
     max-height: 822px;
     overflow: hidden;
@@ -70,6 +75,23 @@
         font-weight: 400;
         color: $silversand;
     }
+    &__image-heart {
+        width: 25px;
+        height: 21px;
+        transform: translate(55px, 3px);
+        cursor: pointer;
+        user-select: none;
+        transition: all .5s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__empty-heart {
+        background-image: url(../images/icon-heart-empty.png);
+    }
+    &__full-heart {
+        background-image: url(../images/icon-heart-full.png)
+    }
     &__like-counter {
         position: relative;
         font-family: $font-family-base;
@@ -77,14 +99,5 @@
         line-height: 1.125;
         font-weight: 400;
         color: $bean-red;
-        &::before {
-            position: absolute;
-            content: '';
-            background-image: url(../images/icon-heart.png);
-            width: 25px;
-            height: 21px;
-            left: -40px;
-            cursor: pointer;
-        }
     }
 }

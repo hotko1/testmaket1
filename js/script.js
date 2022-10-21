@@ -10,3 +10,17 @@ $(document).ready(function(){
         waitForAnimate:false,
     });
 });
+
+function heart(x) {
+    x.classList.toggle("taken-with-ama__full-heart");
+    const i = x.id.slice(-1);
+    const idCounter = "counter-" + i;
+    const textCounter = document.getElementById(idCounter).textContent;
+    if (x.classList.contains('taken-with-ama__full-heart')) {
+        var numCounter = +textCounter + 1;
+    } else {
+        var numCounter = +textCounter - 1;
+    }
+    const newCounter = "#counter-" + i;
+    $(newCounter).text(numCounter);
+}
