@@ -2,26 +2,28 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/grid";
+@import "basic";
 @import "banner";
 @import "why-ama";
 @import "share-instancly";
 @import "new-features";
 @import "taken-with-ama";
+@import "call-to-action";
 
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
+// .container {
+//     max-width: 1170px;
+//     margin: 0 auto;
 
-    @media (max-width:1230px) {
-        max-width: 962px;
-    }
-    @media (max-width:1024px) {
-        max-width: 690px;
-    }
-    @media (max-width:750px) {
-        max-width: 510px;
-    }
-    @media (max-width:575px) {
-        max-width: 288px;
-    }
-}
+//     @media (max-width:1230px) {
+//         max-width: 962px;
+//     }
+//     @media (max-width:1024px) {
+//         max-width: 690px;
+//     }
+//     @media (max-width:750px) {
+//         max-width: 510px;
+//     }
+//     @media (max-width:575px) {
+//         max-width: 288px;
+//     }
+// }

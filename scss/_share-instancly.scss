@@ -84,19 +84,13 @@
     }
     &__title {
         margin-bottom: 19px;
-        transform: translateX(-11px) scaleX(0.97);
-        font-family: $font-family-title;
-        font-size: 3rem;
-        line-height: 1.2;
-        font-weight: 600;
-        color: $white;
+        transform: translateX(-22px) scaleX(0.93);
 
         @media (max-width: 1230px) {
             transform: translateX(-5px) scaleX(0.986);
         }
         @media (max-width: 1024px) {
             transform: translateX(-3px) scaleX(0.986);
-            font-size: 2rem;
         }
     }
     &__top-text {

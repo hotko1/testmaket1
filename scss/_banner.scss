@@ -114,7 +114,7 @@
     }
 }
 
-.slider-banner__header {
+.slider-banner__title {
     transform: translateY(293px);
     margin-left: -20px;
     font-family: $font-family-title;
@@ -149,13 +149,6 @@
     position: relative;
     padding: 16px 22px 19px 86px;
     transform: translateY(295px);
-    border: 3px solid $white;
-    border-radius: 5px;
-    font-family: $font-family-base;
-    font-size: 1.875rem;
-    line-height: 1.2;
-    font-weight: 400;
-    color: $white;
 
     @media (max-width: 1599px) {
         transform: translateY(160px);
@@ -197,13 +190,6 @@
 
     }
     &-left::before {
-        content: "";
-        position: absolute;
-        width: 52px;
-        height: 52px;
-        background-image: url(../images/icon-appstore.png);
-        left: 19px;
-        top: 9px;
 
         @media (max-width: 1024px) {
             background-size: 32px 32px;
@@ -232,13 +218,6 @@
         }
 
         &::before {
-            content: "";
-            position: absolute;
-            width: 42px;
-            height: 47px;
-            background-image: url(../images/icon-playstore.png);
-            left: 26px;
-            top: 13px;
 
             @media (max-width: 1024px) {
                 background-size: 32px 32px;

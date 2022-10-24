@@ -1,0 +1,108 @@
+@import "reset";
+@import "variables";
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @media (max-width:1230px) {
+        max-width: 962px;
+    }
+    @media (max-width:1024px) {
+        max-width: 690px;
+    }
+    @media (max-width:750px) {
+        max-width: 510px;
+    }
+    @media (max-width:575px) {
+        max-width: 288px;
+    }
+}
+
+.title {
+    font-family: $font-family-title;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: $white;
+
+    @media (max-width:1024px) {
+        font-size: 2rem;
+    }
+}
+
+.store-button {
+    display: block;
+    position: relative;
+    padding: 16px 22px 19px 86px;
+    border: 3px solid $white;
+    border-radius: 5px;
+    font-family: $font-family-base;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $white;
+    transition: all .5s;
+    &:hover, &:focus {
+        cursor: pointer;
+        border-color: $prussian-blue;
+        background-color: $prussian-blue;
+    }
+    &__link-left::before {
+        content: "";
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        background-image: url(../images/icon-appstore.png);
+        left: 19px;
+        top: 9px;
+
+        @media (max-width: 1024px) {
+            background-size: 32px 32px;
+            background-repeat: no-repeat;
+            left: 12px;
+            top: 7px;
+        }
+        @media (max-width: 768px) {
+            background-size: 26px 26px;
+            background-repeat: no-repeat;
+            top: 7px;
+        }
+    }
+    &__link-right {
+        padding-left: 87px;
+        padding-right: 20px;
+
+        @media (max-width: 1024px) {
+            padding-right: 12px;
+            padding-left: 55px;
+        }
+        @media (max-width: 768px) {
+            padding-right: 10px;
+            padding-left: 50px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 42px;
+            height: 47px;
+            background-image: url(../images/icon-playstore.png);
+            left: 26px;
+            top: 13px;
+
+            @media (max-width: 1024px) {
+                background-size: 32px 32px;
+                background-repeat: no-repeat;
+                left: 12px;
+                top: 7px;
+            }
+            @media (max-width: 768px) {
+                background-size: 26px 26px;
+                background-repeat: no-repeat;
+                top: 7px;
+            }
+        }
+    }
+}

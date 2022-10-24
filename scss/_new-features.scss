@@ -37,17 +37,8 @@
         }
     }
     &__title {
-        transform: translateX(-2px) scaleX(0.9863);
+        transform: translateX(-9px) scaleX(0.959);
         margin-bottom: 23px;
-        font-family: $font-family-title;
-        font-size: 3rem;
-        line-height: 1.2;
-        font-weight: 600;
-        color: $white;
-
-        @media (max-width: 1024px) {
-            font-size: 2rem;
-        }
     }
     &__description {
         max-width: 440px;
