@@ -2961,7 +2961,7 @@ a {
 }
 @media (max-width: 1024px) {
   .compatibility-bottom__image-left {
-    transform: translateX(-12px) scale(0.8);
+    transform: translateX(-12px) scale(0.79);
   }
 }
 @media (max-width: 360px) {
@@ -2974,12 +2974,7 @@ a {
 }
 @media (max-width: 1024px) {
   .compatibility-bottom__image-right {
-    transform: translateX(-35px) scale(0.8);
-  }
-}
-@media (max-width: 575px) {
-  .compatibility-bottom__image-right {
-    transform: translateX(-37px) scale(0.8);
+    transform: translateX(-37px) scale(0.79);
   }
 }
 @media (max-width: 360px) {
