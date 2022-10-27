@@ -1,6 +1,16 @@
 @import "reset";
 @import "variables";
 
+body, html {
+    height: 100%;
+}
+
+body {
+    &.lock {
+        overflow: hidden;
+    }
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;

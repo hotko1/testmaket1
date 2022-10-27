@@ -75,6 +75,10 @@
             border: 2px solid $white;
             border-radius: 50%;
             cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                opacity: 0.7;
+            }
         }
         &.slick-active button {
             background-color: $white;
@@ -93,6 +97,10 @@
 
 .banner {
     background-color: $pastel-red;
+
+    @media (max-width: 1600px) {
+        padding-top: 65px;
+    }
 }
 
 .slider__background {

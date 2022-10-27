@@ -11,6 +11,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.header-burger').click(function(event) {
+        $('.header-burger,.header-menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
+
 function heart(x) {
     x.classList.toggle("taken-with-ama__full-heart");
     const i = x.id.slice(-1);
