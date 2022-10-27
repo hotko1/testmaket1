@@ -43,7 +43,7 @@
     &__description {
         max-width: 440px;
         transform: translateX(5px) scaleX(1.003);
-        margin-bottom: 65px;
+        margin-bottom: 66px;
         font-family: $font-family-base;
         font-size: 1.125rem;
         line-height: 1.5;
@@ -75,13 +75,13 @@
         }
     }
     &__slider-bottom-background {
-        height: 42px;
+        height: 43px;
         background-color: $bean-red;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     &__right-image {
-        transform: translate(43px, 100px);
+        transform: translate(42px, 100px);
         filter: drop-shadow(5px 2px 23px rgba(0, 0, 0, 0.7));
 
         @media (max-width: 1230px) {
@@ -111,7 +111,7 @@
         }
     }
     &__image {
-        margin-top: -18px;
+        margin-top: -20px;
         object-fit: contain;
         
 
@@ -157,7 +157,7 @@
         }
     }
     .slick-dots {
-        transform: translate(-134px, 110px);
+        transform: translate(-134px, 109px);
 
         @media (max-width: 1024px) {
             transform: translate(-105px, 110px);

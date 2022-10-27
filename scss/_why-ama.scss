@@ -3,9 +3,9 @@
 
 .why-ama {
     padding-top: 100px;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
     &__title {
-        margin-bottom: 61px;
+        margin-bottom: 62px;
         margin-left: 4px;
         letter-spacing: 1px;
         color: $iridium;
@@ -23,10 +23,10 @@
                 transform: translateY(-2px);
             }
             .why-ama__title-item {
-                transform: translateX(-6px) scaleX(1.01);
+                transform: translateX(-7px) scaleX(1.01);
             }
             .why-ama__text-item {
-                transform: translateX(-6px) scaleX(1.005);;
+                transform: translateX(-7px) scaleX(1.005);;
             }
         }
         &:nth-child(2) {

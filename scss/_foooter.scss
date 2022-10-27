@@ -121,7 +121,7 @@
             color: $whitesmoke;
             cursor: pointer;
             transition: all .5s;
-            &:hover {
+            &:hover, &:focus {
                 opacity: 0.7;
             }
 

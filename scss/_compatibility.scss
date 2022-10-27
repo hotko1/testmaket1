@@ -22,7 +22,7 @@
         margin-bottom: 32px;
         border-bottom: 2px solid $ghost;
         &__title {
-            transform: translateX(-12px) scaleX(0.98);
+            transform: translateX(-11px) scaleX(0.98);
             font-family: $font-family-title;
             font-size: 1.5rem;
             line-height: 1.2;
@@ -87,7 +87,7 @@
             }
             &-right {
                 margin-bottom: 34px;
-                transform: translateX(0) scaleX(1.002);
+                transform: translateX(0) scaleX(1.003);
             }
         }
         &__image-left {
