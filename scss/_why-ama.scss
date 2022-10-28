@@ -11,7 +11,10 @@
         color: $iridium;
         text-align: center;
         transform: scale(0.93, 1);
-
+        .span-first {
+            display: inline-block;
+            transform: translateX(-2px) scaleX(0.99);
+        }
     }
     &__item {
         display: flex;

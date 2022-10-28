@@ -68,7 +68,7 @@
 
         .span-first {
             display: inline-block;
-            transform: translateX(1px) scaleX(0.995);
+            transform: translate(1px, -1px) scaleX(0.995);
         }
         .span-second {
             display: inline-block;

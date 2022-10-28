@@ -39,6 +39,14 @@
     &__title {
         transform: translateX(-9px) scaleX(0.959);
         margin-bottom: 23px;
+        .span-first {
+            display: inline-block;
+            transform: translateX(1px)  scaleX(1.03);
+        }
+        .span-second {
+            display: inline-block;
+            transform: scaleX(0.99);
+        }
     }
     &__description {
         max-width: 440px;

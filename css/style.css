@@ -1260,10 +1260,20 @@ a {
 
 body, html {
   height: 100%;
+  min-height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 body.lock {
   overflow: hidden;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -1592,6 +1602,17 @@ a {
   font-weight: 600;
   color: #fff;
 }
+.slider-banner__title .span-first {
+  display: inline-block;
+}
+.slider-banner__title .span-second {
+  display: inline-block;
+  transform: scaleX(0.97);
+}
+.slider-banner__title .span-third {
+  display: inline-block;
+  transform: scaleX(0.99);
+}
 @media (max-width: 1599px) {
   .slider-banner__title {
     transform: translateY(180px);
@@ -1781,6 +1802,10 @@ a {
   color: #3a3a3a;
   text-align: center;
   transform: scale(0.93, 1);
+}
+.why-ama__title .span-first {
+  display: inline-block;
+  transform: translateX(-2px) scaleX(0.99);
 }
 .why-ama__item {
   display: flex;
@@ -2233,6 +2258,14 @@ a {
   transform: translateX(-9px) scaleX(0.959);
   margin-bottom: 23px;
 }
+.new-features__title .span-first {
+  display: inline-block;
+  transform: translateX(1px) scaleX(1.03);
+}
+.new-features__title .span-second {
+  display: inline-block;
+  transform: scaleX(0.99);
+}
 .new-features__description {
   max-width: 440px;
   transform: translateX(5px) scaleX(1.003);
@@ -2462,7 +2495,7 @@ a {
 }
 .taken-with-ama__title {
   margin-bottom: 20px;
-  transform: translateX(-22px) scaleX(0.935);
+  transform: translateX(-23px) scaleX(0.935);
   color: #f06464;
 }
 .taken-with-ama__title span {
@@ -2471,7 +2504,7 @@ a {
 }
 .taken-with-ama__description {
   max-width: 450px;
-  transform: translateX(0) scaleX(1.007);
+  transform: translateX(1px) scaleX(1.007);
   font-family: "Varela Round", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -3039,7 +3072,7 @@ a {
 }
 .call-to-action__title .span-first {
   display: inline-block;
-  transform: translateX(1px) scaleX(0.995);
+  transform: translate(1px, -1px) scaleX(0.995);
 }
 .call-to-action__title .span-second {
   display: inline-block;

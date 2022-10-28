@@ -132,6 +132,17 @@
     letter-spacing: -1.3px;
     font-weight: 600;
     color: $white;
+    .span-first {
+        display: inline-block;
+    }
+    .span-second {
+        display: inline-block;
+        transform: scaleX(0.97);
+    }
+    .span-third {
+        display: inline-block;
+        transform: scaleX(0.99);
+    }
 
     @media (max-width: 1599px) {
         transform: translateY(180px);
