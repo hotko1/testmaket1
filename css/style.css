@@ -1,3 +1,7 @@
+/**
+* @file
+* Import all scss files.
+*/
 .container,
 .container-fluid,
 .container-xl,
@@ -926,6 +930,15 @@
     margin-left: 91.66666667%;
   }
 }
+/**
+* @file
+* Styles for header and menu.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -979,12 +992,23 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 50;
+  /* Hamburger menu */
 }
 .header::before {
   content: "";
@@ -1070,6 +1094,7 @@ a {
 }
 .header-menu {
   height: 100%;
+  /* Stylization of the drop-down menu */
 }
 .header-menu__list {
   display: flex;
@@ -1160,6 +1185,9 @@ a {
   vertical-align: middle;
   transition: all 0.5s;
 }
+.header-menu__link:hover {
+  /* The top frame above the menu */
+}
 .header-menu__link:hover::before {
   content: "";
   position: absolute;
@@ -1205,6 +1233,15 @@ a {
   }
 }
 
+/**
+* @file
+* Basic styles.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1258,6 +1295,19 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* Basic styles.
+*/
 body, html {
   height: 100%;
   min-height: 100%;
@@ -1301,6 +1351,7 @@ body.lock {
   }
 }
 
+/* Styles for the header of the block */
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -1315,6 +1366,7 @@ body.lock {
   }
 }
 
+/* Styles for store buttons */
 .store-button {
   display: block;
   position: relative;
@@ -1398,6 +1450,15 @@ body.lock {
   }
 }
 
+/**
+* @file
+* Styles for top block Banner, with slider.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1451,6 +1512,16 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .slick-list {
   overflow: hidden;
 }
@@ -1738,6 +1809,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for block Why ama.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1791,6 +1871,16 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .why-ama {
   padding-top: 100px;
   padding-bottom: 53px;
@@ -1861,6 +1951,15 @@ a {
   color: #666666;
 }
 
+/**
+* @file
+* Styles for block Share instantly.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1914,6 +2013,16 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .share-instancly {
   max-height: 734px;
   background-color: #262626;
@@ -1986,6 +2095,7 @@ a {
   }
 }
 
+/* Styles for slider */
 .slider-share-instancly {
   padding-top: 183px;
 }
@@ -2154,6 +2264,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for block New features.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2207,10 +2326,23 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .new-features {
   max-height: 803px;
   background-color: #313131;
   overflow: hidden;
+  /* Slider background*/
+  /* Slider bottom background*/
+  /* Right image */
 }
 @media (max-width: 1024px) {
   .new-features {
@@ -2337,6 +2469,7 @@ a {
   }
 }
 
+/* Styles for slider */
 .slider-new-features__item {
   display: flex;
   padding-top: 34px;
@@ -2422,6 +2555,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for block Taken with ama.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2475,6 +2617,16 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .container-taken-with-ama {
   max-width: 2000px;
   margin: 0 auto;
@@ -2482,6 +2634,9 @@ a {
 
 .taken-with-ama {
   overflow: hidden;
+  /* Photo gallery */
+  /* Like button */
+  /* Like counter */
 }
 .taken-with-ama__top {
   margin-bottom: 77px;
@@ -2940,6 +3095,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for block Call to action.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2993,8 +3157,19 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .call-to-action {
   background-color: #de5d5d;
+  /* Position for store buttons */
 }
 @media (max-width: 767px) {
   .call-to-action {
@@ -3136,6 +3311,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for block Compatibility.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -3189,6 +3373,16 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .compatibility {
   padding-top: 87px;
   padding-bottom: 117px;
@@ -3316,6 +3510,15 @@ a {
   }
 }
 
+/**
+* @file
+* Styles for footer.
+*/
+/* Import reset and variables files*/
+/**
+* @file
+* Reset default css style.
+*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -3369,10 +3572,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
 .footer {
   padding-top: 59px;
   padding-bottom: 90px;
   background-color: #f4f4f4;
+  /* Form for subscribe */
 }
 @media (max-width: 1024px) {
   .footer {

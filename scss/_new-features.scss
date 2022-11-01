@@ -1,3 +1,9 @@
+/**
+* @file
+* Styles for block New features.
+*/
+
+/* Import reset and variables files*/
 @import "reset";
 @import "variables";
 
@@ -65,6 +71,8 @@
             font-size: 1rem;
         }
     }
+
+    /* Slider background*/
     &__slider-wrapper {
         display: flex;
         flex-direction: column;
@@ -82,12 +90,16 @@
             width: 280px;
         }
     }
+
+    /* Slider bottom background*/
     &__slider-bottom-background {
         height: 43px;
         background-color: $bean-red;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+
+    /* Right image */
     &__right-image {
         transform: translate(42px, 100px);
         filter: drop-shadow(5px 2px 23px rgba(0, 0, 0, 0.7));
@@ -107,6 +119,7 @@
     }
 }
 
+/* Styles for slider */
 .slider-new-features {
     &__item {
         display: flex;

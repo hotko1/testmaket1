@@ -1,3 +1,9 @@
+/**
+* @file
+* Styles for block Taken with ama.
+*/
+
+/* Import reset and variables files*/
 @import "reset";
 @import "variables";
 
@@ -39,6 +45,8 @@
             font-size: 1rem;
         }
     }
+
+    /* Photo gallery */
     &__gallery {
         display: flex;
         max-height: 518px;
@@ -309,6 +317,8 @@
             line-height: 1.2;
         }
     }
+
+    /* Like button */
     &__like-wrapper {
         display: flex;
     }
@@ -334,6 +344,8 @@
     &__full-heart {
         background-image: url(../images/icon-heart-full.png)
     }
+
+    /* Like counter */
     &__like-counter {
         margin-left: 8px;
         font-family: $font-family-base;

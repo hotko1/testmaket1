@@ -1,3 +1,9 @@
+/**
+* @file
+* Styles for block Call to action.
+*/
+
+/* Import reset and variables files*/
 @import "reset";
 @import "variables";
 
@@ -93,6 +99,8 @@
             transform: translateX(5px);
         }
     }
+
+    /* Position for store buttons */
     &__link-wrapper {
         display: flex;
         margin-left: -4px;

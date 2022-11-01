@@ -1,3 +1,9 @@
+/**
+* @file
+* Styles for footer.
+*/
+
+/* Import reset and variables files*/
 @import "reset";
 @import "variables";
 
@@ -57,6 +63,8 @@
             font-size: 0.875rem;
         }
     }
+
+    /* Form for subscribe */
     &__form {
         transform: translateX(-8px);
 
