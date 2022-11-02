@@ -1198,6 +1198,11 @@ a {
   left: 0;
   background-color: #fff;
 }
+@media (max-width: 767px) {
+  .header-menu__link:hover::before {
+    display: none;
+  }
+}
 @media (max-width: 1230px) {
   .header-menu__link {
     padding-right: 10px;
