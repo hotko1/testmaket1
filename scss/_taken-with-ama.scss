@@ -67,17 +67,23 @@
         height: 615px;
         background-color: $cinder;
         transition: all .5s;
+
+        @media (max-width: 1024px) {
+            max-height: 517px;
+        }
+
         &:hover {
             height: 557px;
             transform: translateY(-38px);
+            transition: all .5s;
 
             @media (max-width: 1300px) {
                 max-height: 415px;
             }
             @media (max-width: 1024px) {
                 height: 615px;
-                max-height: 615px;
-                transform: none;
+                max-height: 517px;
+                z-index: 10;
             }
         }
         &:nth-child(1) {
@@ -133,9 +139,28 @@
             }
         }
     }
+    &__image-adaptive {
+        height: 100%;
+
+        @media (max-width: 1024px) {
+            height: 614px;
+            &:hover {
+                height: 562px;
+            }
+        }
+    }
     &__image {
+        position: relative;
         height: 84.2%;
         transition: all .5s;
+        z-index: 10;
+
+        @media (max-width: 1024px) {
+            &:hover {
+                position: relative;
+                z-index: 15;
+            }
+        }
 
         &.image-item-1 {
             background: url(../images/photo-gallery-1.png) 0 -61px no-repeat;
@@ -302,7 +327,8 @@
             padding: 25px 20px 0 20px;
         }
         @media (max-width: 1024px) {
-            padding: 37px 20px 0 20px;
+            max-height: 44px;
+            padding: 33px 20px 0 20px;
         }
     }
     &__image-description {
@@ -323,12 +349,14 @@
         display: flex;
     }
     &__image-heart {
+        position: relative;
         width: 25px;
         height: 21px;
         transform: translateY(2px);
         cursor: pointer;
         user-select: none;
         transition: all .5s;
+        z-index: 0;
 
         @media (max-width: 1400px) {
             transform: translateY(0);
@@ -342,7 +370,7 @@
         background-image: url(../images/icon-heart-empty.png);
     }
     &__full-heart {
-        background-image: url(../images/icon-heart-full.png)
+        background-image: url(../images/icon-heart-full.png);
     }
 
     /* Like counter */
