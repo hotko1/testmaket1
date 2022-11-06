@@ -3,9 +3,10 @@
 * Styles for block Taken with ama.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .container-taken-with-ama {
     max-width: 2000px;
@@ -35,10 +36,7 @@
     &__description {
         max-width: 450px;
         transform: translateX(1px) scaleX(1.007);
-        font-family: $font-family-base;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        font-weight: 400;
+        @include descrition-font;
         color: $ironside-grey;
 
         @media (max-width: 750px) {
@@ -332,10 +330,7 @@
         }
     }
     &__image-description {
-        font-family: $font-family-base;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        font-weight: 400;
+        @include descrition-font;
         color: $silversand;
 
         @media (max-width: 1500px) {

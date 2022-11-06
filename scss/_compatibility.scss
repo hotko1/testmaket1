@@ -3,9 +3,10 @@
 * Styles for block Compatibility.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .compatibility {
     padding-top: 87px;
@@ -78,11 +79,7 @@
         }
         &__description {
             max-width: 450px;
-            font-family: $font-family-base;
-            font-size: 1rem;
-            line-height: 1.5;
-            font-weight: 400;
-            color: $ironside-grey;
+            @include description-smaller-font;
             &-left {
                 margin-bottom: 27px;
                 transform: translateX(2px) scaleX(1.002);

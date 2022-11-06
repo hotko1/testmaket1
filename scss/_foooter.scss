@@ -3,9 +3,10 @@
 * Styles for footer.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .footer {
     padding-top: 59px;
@@ -79,11 +80,7 @@
             display: inline-block;
             margin-bottom: 14px;
             transform: translateX(2px) scaleX(1.005);
-            font-family: $font-family-base;
-            font-size: 1rem;
-            line-height: 1.5;
-            font-weight: 400;
-            color: $ironside-grey;
+            @include description-smaller-font;
 
             @media (max-width: 767px) {
                 width: 100%;
@@ -95,11 +92,7 @@
             background-color: $whitesmoke;
             border: 1px solid $dawn;
             border-radius: 5px;
-            font-family: $font-family-base;
-            font-size: 1rem;
-            line-height: 1.5rem;
-            font-weight: 400;
-            color: $ironside-grey;
+            @include description-smaller-font;
 
             @media (max-width: 1280px) {
                 width: 245px;

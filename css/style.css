@@ -1839,7 +1839,7 @@ a {
 * @file
 * Styles for block Why ama.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -1897,6 +1897,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -1978,15 +1993,16 @@ a {
   font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   color: #666666;
+  font-weight: 500;
 }
 
 /**
 * @file
 * Styles for block Share instantly.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -2044,6 +2060,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -2254,6 +2285,7 @@ a {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
+  color: #666666;
   color: #aeaeae;
 }
 @media (max-width: 1024px) {
@@ -2299,7 +2331,7 @@ a {
 * @file
 * Styles for block New features.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -2357,6 +2389,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -2590,7 +2637,7 @@ a {
 * @file
 * Styles for block Taken with ama.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -2648,6 +2695,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -3384,7 +3446,7 @@ a {
 * @file
 * Styles for block Compatibility.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -3442,6 +3504,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -3583,7 +3660,7 @@ a {
 * @file
 * Styles for footer.
 */
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 /**
 * @file
 * Reset default css style.
@@ -3641,6 +3718,21 @@ a {
   padding: 0;
 }
 
+/**
+* @file
+* Variables.
+*/
+/**
+* Fonts
+*
+* Font-damily.
+*/
+/* Colors */
+/**
+* @file
+* Mixins.
+*/
+/* Import variables files*/
 /**
 * @file
 * Variables.
@@ -3753,7 +3845,7 @@ a {
   border-radius: 5px;
   font-family: "Varela Round", sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-weight: 400;
   color: #666666;
 }

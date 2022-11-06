@@ -3,9 +3,10 @@
 * Styles for block New features.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .new-features {
     max-height: 803px;
@@ -58,10 +59,7 @@
         max-width: 440px;
         transform: translateX(5px) scaleX(1.003);
         margin-bottom: 66px;
-        font-family: $font-family-base;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        font-weight: 400;
+        @include descrition-font;
         color: $silver-chalice;
 
         @media (max-width: 1024px) {
@@ -167,11 +165,7 @@
     }
     &__description {
         transform: translateX(1px) scaleX(1.01);
-        font-family: $font-family-base;
-        font-size: 1rem;
-        line-height: 1.5;
-        font-weight: 400;
-        color: $ironside-grey;
+        @include description-smaller-font;
 
         @media (max-width: 750px) {
             font-size: 0.875rem;

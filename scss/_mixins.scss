@@ -1,0 +1,22 @@
+/**
+* @file
+* Mixins.
+*/
+
+/* Import variables files*/
+@import "variables";
+
+@mixin descrition-font {
+    font-family: $font-family-base;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@mixin description-smaller-font {
+    font-family: $font-family-base;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $ironside-grey;
+}

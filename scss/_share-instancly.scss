@@ -3,9 +3,10 @@
 * Styles for block Share instantly.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .share-instancly {
     max-height: 734px;
@@ -108,10 +109,7 @@
         max-width: 445px;
         margin-bottom: 52px;
         transform: translateX(-1px) scaleX(1.003);
-        font-family: $font-family-base;
-        font-size: 1.125rem;
-        line-height: 1.5;
-        font-weight: 400;
+        @include descrition-font;
         color: $silver-chalice;
 
         @media (max-width: 1230px) {
@@ -166,10 +164,7 @@
     &__bottom-text {
         max-width: 245px;
         transform: translateY(-5px) scaleX(1.005);
-        font-family: $font-family-base;
-        font-size: 1rem;
-        line-height: 1.5;
-        font-weight: 400;
+        @include description-smaller-font;
         color: $silver-chalice;
 
         @media (max-width: 1024px) {

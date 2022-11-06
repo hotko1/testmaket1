@@ -3,9 +3,10 @@
 * Styles for block Why ama.
 */
 
-/* Import reset and variables files*/
+/* Import reset, variables and mixins files*/
 @import "reset";
 @import "variables";
+@import "mixins";
 
 .why-ama {
     padding-top: 100px;
@@ -79,10 +80,7 @@
     &__text-item {
         max-width: 250px;
         text-align: center;
-        font-family: $font-family-base;
-        font-size: 1rem;
-        line-height: 1.5;
+        @include description-smaller-font;
         font-weight: 500;
-        color: $ironside-grey;
     }
 }
