@@ -7,6 +7,22 @@
 @import "reset";
 @import "variables";
 
+.container-header {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @media (max-width:1230px) {
+        max-width: 962px;
+    }
+    @media (max-width:1024px) {
+        max-width: 690px;
+    }
+    @media (max-width:767px) {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
+
 .header {
     position: fixed;
     width: 100%;
