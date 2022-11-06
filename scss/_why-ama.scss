@@ -64,6 +64,10 @@
     &__image-item {
         order: -1;
         margin-bottom: 36px;
+
+        @media (max-width: 768px) {
+            height: 180px;
+        }
     }
     &__title-item {
         font-family: $font-family-title;

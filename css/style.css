@@ -1960,6 +1960,11 @@ a {
   order: -1;
   margin-bottom: 36px;
 }
+@media (max-width: 768px) {
+  .why-ama__image-item {
+    height: 180px;
+  }
+}
 .why-ama__title-item {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
